@@ -47,7 +47,7 @@ runs:
       name: Install Rust toolchain and components
       id: toolchain_components
       run: |
-        rustup toolchain install ${{ env.RUST_VERSION }} --components ${{ inputs.components }} 
+        rustup toolchain install ${{ env.RUST_VERSION }} --component ${{ inputs.components }} 
         rustup default ${{ env.RUST_VERSION }}
       shell: bash
 
